@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(182, 180, 177);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 25px;
+
+}
+
+.koltuk_bilgi_alani{
+    padding-bottom: 40px;
+}
+
+.koltuk_bilgi_alani select{
+
+    background-color: white;
+    border:  0;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-left: 20px;
+
+}
+
+.koltuk{
+    height: 30px;
+    width: 24px;
+    background-color: white;
+    margin: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.koltuk_gorseli{
+    display: flex;
+    padding-bottom: 20px;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.koltuk_gorseli li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    justify-content: center;
+
+}
+
+.oturma_duzeni{
+     border: 2px solid black;
+     padding: 10px 5px;
+     border-radius: 5px;
+     perspective: 400px;
+}
+
+.siralar{
+    display: flex;
+}
+
+/* pseudo class */
+
+.koltuk:nth-of-type(1){
+    margin-right: 25px;
+
+}
+
+.oturma_duzeni .on_cam{
+    height: 10px;
+    background-color: azure;
+    width: auto;
+    margin-bottom: 15px;
+    transform: rotateX(-30deg);
+
+}
+
+.koltuk.dolu{
+    background-color:blue ;
+}
+
+.koltuk.secilmis{
+    background-color: brown;
+}
+
+.oturma_duzeni .koltuk:not(.dolu):hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
