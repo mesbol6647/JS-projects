@@ -7,107 +7,14 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>--Tıklayın Yerinizi Ayırtın; Clarusway Otobusu Kalkıyor!--</h1>
+    <img src="bus.png" alt="otobüs" id="otobus">
 
-    <!-- ****************Yolcu Tipini Seç*************** -->
-
-<div class="koltuk_bilgi_alani">
-    <label for="">Yolcu Tipi</label>
-    <select name="" id="yolcuTipi">
-        <option value="500">Yetişkin</option>
-        <option value="250">Öğrenci</option>
-        <option value="300">65 Yaş Üstü</option>
-        <option value="150">Engelli</option>
-    </select>
-</div>
-
-<!-- **********************Koltuk Bilgileri*************** -->
-
-<div class="koltuk_gorseli">
-    <li>
-        <div class="koltuk"></div>
-        <small>Boş</small>
-    </li>
-    <li>
-        <div class="koltuk secilmis"></div>
-        <small>Seçilmiş</small>
-    </li>
-    <li>
-        <div class="koltuk dolu"></div>
-        <small>Dolu</small>
-    </li>
-
-</div>
-
-<div class="oturma_duzeni">
-
-    <div class="on_cam"></div>
-<!-- 1.sıra -->
-<div class="siralar">
-    <div class="koltuk dolu"></div>
-    <div class="koltuk"></div>
-    <div class="koltuk"></div>
-</div>
-<!-- 2.sıra -->
-<div class="siralar">
-    <div class="koltuk"></div>
-    <div class="koltuk"></div>
-    <div class="koltuk"></div>
-</div>
-<!-- 3.sıra -->
-<div class="siralar">
-    <div class="koltuk dolu"></div>
-    <div class="koltuk"></div>
-    <div class="koltuk"></div>
-</div>
-<!-- 4.sıra -->
-<div class="siralar">
-    <div class="koltuk"></div>
-    <div class="koltuk"></div>
-    <div class="koltuk"></div>
-</div>
-<!-- 5.sıra -->
-<div class="siralar">
-    <div class="koltuk"></div>
-    <div class="koltuk dolu "></div>
-    <div class="koltuk dolu"></div>
-</div>
-<!-- 6.sıra -->
-<div class="siralar">
-    <div class="koltuk"></div>
-    <div class="koltuk"></div>
-    <div class="koltuk"></div>
-</div>
-<!-- 7.sıra -->
-<div class="siralar">
-    <div class="koltuk"></div>
-    <div class="koltuk"></div>
-    <div class="koltuk"></div>
-</div>
-<!-- 8.sıra -->
-<div class="siralar">
-    <div class="koltuk"></div>
-    <div class="koltuk"></div>
-    <div class="koltuk"></div>
-</div>
-<!-- 9.sıra -->
-<div class="siralar">
-    <div class="koltuk"></div>
-    <div class="koltuk"></div>
-    <div class="koltuk"></div>
-</div>
-<!-- 10.sıra -->
-<div class="siralar">
-    <div class="koltuk dolu"></div>
-    <div class="koltuk dolu"></div>
-    <div class="koltuk dolu"></div>
-</div>
-
-</div>
-
-<p class="text">
-    <span id="adet">0</span> Adet Bilet Seçtiniz.
-Ödemeniz Gereken Tutar <span id="tutar">0</span> TL'dir.
-</p>
-    <script src="script.js"></script>
+    <script>
+        let resim =document.getElementById("otobus");
+        resim.addEventListener("click",function(){
+            window.location.href ="index1.html";
+        });
+    </script>
 </body>
 </html>
