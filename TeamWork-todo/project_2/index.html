@@ -6,18 +6,7 @@
     <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-    
-
-
-
-
-
-
-
-
-
+<body> 
     <div class="defter">
         <p class="ust-satir">DONT FORGET TO...</p>
         <hr class="kirmizi-cizgi">
@@ -62,23 +51,7 @@
         <hr class="kirmizi-cizgi">
         <p class="alt-satir">.... Out Of .... Tasks Completed</p>
     </div>
-
-    <script>
-        var checkboxes = document.querySelectorAll("input[type=checkbox]");
-        var gorevTexts = document.querySelectorAll(".gorev-text");
-
-        checkboxes.forEach(function(checkbox, index) {
-            checkbox.addEventListener("change", function() {
-                if (checkbox.checked) {
-                    gorevTexts[index].style.textDecoration = "line-through";
-                    gorevTexts[index].style.color = "black";
-                } else {
-                    gorevTexts[index].style.textDecoration = "none";
-                    gorevTexts[index].style.color = "black";
-                }
-            });
-        });
-    </script>
+  
     <script src="app.js"></script>
 </body>
 </html>
