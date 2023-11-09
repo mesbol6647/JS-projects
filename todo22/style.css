@@ -76,9 +76,14 @@ input, button{
     background:#fff;
     border-left : 2px solid #eee;
 }
+/* .gorevListesi {
+    
+    color: red;
+    font-size: 36px;
+} */
 
-
-*************javascript kodlarından sonra*********************
+/* 
+*************javascript kodlarından sonra********************* */
 
 li {
     margin: 10px auto;
@@ -97,8 +102,8 @@ li {
     transition: background-color 0.3s;
 }
 
-.completed {
-    background-color: blue;
+.completedX {
+    background-color:red;
     color: white;
     font-size: 24px;
 }
@@ -108,6 +113,8 @@ li {
     font-size: 20px;
 }
 
+.addButton:hover {
+    background-color: rgb(0, 255, 0);
+    box-shadow: -7px 0 0 blueviolet;
 
-
-
+}
