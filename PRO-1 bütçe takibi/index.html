@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bütçe Takibi</title>
+  </head>
+  <body>
+    <div class="uygulama_alani">
+      <!-- bakiye bölmesi -->
+      <div class="bakiye_penceresi">
+        <h1>Bakiye</h1>
+        <h2><span id="bakiye">0</span>TL</h2>
+      </div>
+
+      <!-- gelir-gider tablosu -->
+      <div class="gelir_gider_tablosu">
+        <div class="gelir">
+          <h3>Gelir</h3>
+          <p class="gelen miktar" id="gelen-miktar">+0.00 TL</p>
+        </div>
+        <div class="gider">
+          <h3>Gider</h3>
+          <p class="giden miktar" id="giden-miktar">-0.00 TL</p>
+        </div>
+      </div>
+   
+
+    <!-- işlem geçmişi -->
+    <div class="islem_gecmisi">
+      <h2>İşlem Geçmişi</h2>
+      <ul id="islemler" class="islemler">
+        <!-- <li class="gider">
+          <span>Faturalar</span>
+          <span> -500</span>
+          <button class="sil-btn">X</button>
+        </li>
+        <li class="gelir">
+          <span>Maaş</span>
+          <span>10000</span>
+          <button class="sil-btn">X</button>
+        </li> -->
+      </ul>
+   
+
+    <!-- İşlem Ekleme -->
+
+    <form  id="form" class="form">
+
+
+        <h2>İşlem Ekleme</h2>
+        <div class="form-control">
+            <label for="islem_Adi">İşlem</label>
+            <input type="text"  id="islem_Adi"  placeholder="İşleminiz....">
+        </div>
+        <div class="form-control">
+            <label for="miktar">Miktar</label>
+            <input type="number"  id="miktar"  placeholder="Miktar Giriniz....">
+        </div>
+
+        <button type="submit" class="btn">İşlem Ekle</button>
+    </form>
+</div>
+    <script src="app.js"></script>
+  </body>
+</html>

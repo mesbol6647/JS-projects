@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.uygulama_alani{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    width: 400px;
+    border: 5px solid #d31b1b;
+}
+
+.gelir_gider_tablosu{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    background-color: rgb(233, 223, 223);
+    padding: 20px;
+}
+
+.gelir_gider_tablosu > div:first-of-type{
+    border-right: 1px solid black;
+    width: 40%;
+}
+
+.gelen.miktar{
+    color: green;
+}
+
+.giden.miktar{
+    color: rgb(255, 89, 0);
+}
+
+.islemler{
+    list-style-type: none;
+    padding: 0;
+    width: 320px;
+}
+
+.islemler li{
+    background-color: rgb(214, 208, 208);
+    color: rgb(5, 5, 5);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+}
+
+.islemler li.gelir{
+    border-right: 5px solid green;
+}
+
+.islemler li.gider{
+    border-right: 5px solid  rgb(255, 89, 0);
+}
+
+.sil-btn{
+    background-color: #ff304f;
+    border: 0;
+    padding: 2px 5px;
+    border-radius: 4px;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    transition: opacity 0.4s ease;
+    opacity: 0;
+}
+
+.islemler li:hover .sil-btn{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.form{
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.form-control{
+   margin: 10px 0;
+
+}
+.form-control input{
+    width: 120%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #e9e3e3;
+    box-shadow: 0 1px 3px rgba(137, 135, 135, 0.12);
+}
+
+input:focus{
+
+    outline: none;
+
+}
+
+label{
+    display: block;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.btn{
+    background-color: #3d6cb9;
+    width: 120%;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.btn:hover, input{
+    transform: scale(1.02);
+    cursor:pointer;
+}
