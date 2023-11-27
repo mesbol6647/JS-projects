@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: rgb(33, 42, 46);
+	background: radial-gradient(
+		circle,
+		rgba(33, 42, 46, 1) 0%,
+		rgba(18, 10, 15, 1) 100%
+	);
+}
+main {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-40%,-50%);
+}
+.container {
+	width: 600px;
+	height: 600px;
+	background-image: url(./asssets/2d.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#time{
+    position: absolute;
+	color: orange;
+    left: 52%;
+	top: 38%;
+    padding-top: 2px;
+}
+#date{
+	position: absolute;
+	color: orange;
+    left: 34%;
+	top: 38%;
+    padding-top: 2px;
+}
+#stopWatch {
+	position: absolute;
+	left: 31%;
+	top: 41%;
+	color: orange;
+	font-size: 2.6rem;
+    font-family: 'Digital';
+}
+
+#play {
+	position: absolute;
+	left: 38%;
+	top: 29%;
+	font-size: 1.6rem;
+	color: #f5f2d0;
+	padding: 0 0.3rem;
+	border-radius: 1.2rem;
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+#stop {
+	position: absolute;
+	left: 39%;
+	top: 54%;
+	font-size: 1.6rem;
+	color: #f5f2d0;
+	padding: 2px 0.3rem;
+	border-radius: 1.2rem;
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+#reset {
+	position: absolute;
+	left: 55%;
+	top: 50%;
+	width: 35px;
+	height: 35px;
+	font-size: .8rem;
+	border-radius: 50%;
+	background: transparent;
+	border: 2px solid #000;
+	outline: none;
+	cursor: pointer;
+	color: #f5f2d0;
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: 'Digital'; /*a name to be used later*/
+    src: url('./asssets/digital-7.regular.ttf'); /*URL to font*/
+}
+
+@media screen and (max-width:736px){
+    main {
+        top: 53%;
+        left:45%;
+    }
+}
+
+@media screen and (max-width:637px){
+    main {
+        top: 53%;
+        left:44%;
+    }
+    .container{
+        width:465px;
+        height: 493px;
+    }
+    #stopWatch {
+        font-size: 2rem;
+    }
+    
+    #play {
+        left: 37%;
+        font-size: 1.3rem;
+    }
+    
+    #stop {
+        left: 39%;
+        top: 53%;
+        font-size: 1.3rem;
+        padding: 5px 0.3rem;
+    }
+    
+    #reset {
+        left: 56%;
+        width: 30px;
+        height: 30px;
+        font-size: .6rem;     
+    }
+}
