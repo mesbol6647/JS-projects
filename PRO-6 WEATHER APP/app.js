@@ -3,7 +3,7 @@ const input =document.querySelector("form input");
 const msgSpan =form.querySelector(".msg");
 const list =document.querySelector(".container .cities");
 
-// localStorage.setItem("apiKey",EncryptStringAES("7b24cfa1eff8245df1d6a0faa9b737a6"));
+
  
 // html inline assign, addEventListener, onclick, setAttribute
 form.addEventListener("submit", (e)=>{
