@@ -6,4 +6,5 @@ Javascript Workshop contains hands-on trainings and projects.
 1. Colors
 2. Counter
 3. Digital-Clock
+4. Todo-List
 
