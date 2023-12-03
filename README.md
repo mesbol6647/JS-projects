@@ -7,4 +7,5 @@ Javascript Workshop contains hands-on trainings and projects.
 2. Counter
 3. Digital-Clock
 4. Todo-List
+5. Guess the number Game
 
